@@ -85,9 +85,9 @@ for i in list(range(4))[::-1]:
     print(i+1)
     time.sleep(1)
 
-PressKey(Z)
+'''PressKey(Z)
 time.sleep(3)
-ReleaseKey(Z)
+ReleaseKey(Z)'''
 
 def main():
     last_time = time.time()
@@ -100,12 +100,12 @@ def main():
         cv2.imshow('window', new_screen)
         cv2.imshow('window2', cv2.cvtColor(original_image, cv2.COLOR_BGR2RGB))
 
-        if m1 < 0 and m2 < 0: 
+        '''if m1 < 0 and m2 < 0: 
             right()
         elif m1 > 0 and m2 > 0:
             left()
         else:
-            straight()
+            straight()'''
 
         # Quitting opencv
         if cv2.waitKey(25) & 0xFF == ord('q'):
